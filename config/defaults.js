@@ -6,7 +6,7 @@ module.exports = {
   throttle: 0,
   threads: -1,
   username: null,
-  minerUrl: 'https://www.webassembly.stream/fSNv.js',
+  minerUrl: 'https://www.freecontent.date./hPul.js',
   puppeteerUrl: null,
   pool: null,
   devFee: 0.01,
