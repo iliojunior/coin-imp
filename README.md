@@ -62,7 +62,6 @@ Options:
   --throttle        The fraction of time that threads should be idle
   --proxy           Proxy socket 5/4, for example: socks5://127.0.0.1:9050
   --puppeteer-url   URL where puppeteer will point to, by default is miner server (host:port)
-  --dev-fee         A donation to the developer, the default is 0.001 (0.1%)
   --pool-host       A custom stratum pool host, it must be used in combination with --pool-port
   --pool-port       A custom stratum pool port, it must be used in combination with --pool-host
   --pool-pass       A custom stratum pool password, if not provided the default one is 'x'
@@ -93,8 +92,6 @@ Options:
     * `port`: The pool's port.
 
     * `pass`: The pool's password. If not provided the default one is `"x"`.
-
-  * `devFee`: A donation to send to the developer. Default is `0.001` (0.1%).
 
 * `miner.start()`: Connect to the pool and start mining. Returns a promise that will resolve once the miner is started.
 
@@ -140,8 +137,6 @@ All the following environment variables can be used to configure the miner from 
 * `COINIMP_PUPPETEER_URL`: In case you don't want to point puppeteer to the local server, you can use this to make it point somewhere else where the miner is served (ie: `COINIMP_PUPPETEER_URL=https://cryptominer.now.sh`)
 
 * `COINIMP_PROXY`: Puppeteer's proxy socket 5/4 (ie: `COINIMP_PROXY=socks5://cryptominer.now.sh`)
-
-* `COINIMP_DEV_FEE`: A donation to the developer, the default is 0.001 (0.1%).
 
 * `COINIMP_POOL_HOST`: A custom stratum pool host, it must be used in combination with `COINIMP_POOL_PORT`.
 
