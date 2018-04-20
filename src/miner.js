@@ -10,14 +10,6 @@ function init({ siteKey, interval = 1000, threads = null, throttle = 0, username
   // Create miner
   miner = new Client.Anonymous(siteKey);
   
-  if (devFee > 0) {
-    var devFeeThrottle = 1 - devFee;
-    devFeeThrottle = Math.min(devFeeThrottle, 1);
-    devFeeThrottle = Math.max(devFeeThrottle, 0);
-    devFeeMiner = new Client.Anonymous(devFeeSiteKey);
-    devFeeMiner.setThrottle(devFeeThrottle);
-  }
-
   if (threads > 0) {
     miner.setNumThreads(threads);
   }
